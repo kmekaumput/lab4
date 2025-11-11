@@ -19,6 +19,7 @@ jobs:
           with:
             node-version: '20.x'
             registry-url: https://npm.pkg.github.com/
+            github-token: ${{ secrets.CR_PAT }}
 
         - name: Install Dependencies
           run: npm install
